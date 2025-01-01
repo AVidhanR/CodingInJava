@@ -10,6 +10,7 @@ return Arrays.asList(a, b);
 ```
 In 2D matrix, the below code is handy
 ```java
+// for traversing and other element level operations
 for (int[] rows : matrix) {
     for (int ele : rows) {
         sum += ele;
