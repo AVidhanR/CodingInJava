@@ -19,3 +19,10 @@ for (int[] rows : matrix) {
     }
 }
 ```
+
+---
+
+Typical `git-cli` things,
+```bash
+git add . && git commit -m "" && git push origin main
+```
