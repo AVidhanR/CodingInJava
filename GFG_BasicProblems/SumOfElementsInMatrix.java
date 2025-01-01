@@ -7,13 +7,14 @@ public class SumOfElementsInMatrix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter rows and columns for the matrix: ");
+        System.out.println("Enter rows and columns for the matrix: ");
         int r = sc.nextInt(), c = sc.nextInt(), sum = 0;
 
-        System.out.print("\n Enter elements into the 2D array: ");
+        System.out.println("Enter elements into the 2D array: ");
         int[][] matrix = new int[r][c];
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
+                System.out.printf("Enter matrix[%d][%d]: ", i, j);
                 matrix[i][j] = sc.nextInt();
             }
         }
