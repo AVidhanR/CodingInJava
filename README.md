@@ -19,10 +19,21 @@ for (int[] rows : matrix) {
     }
 }
 ```
+While using String's as char's the belo code is handy,
+```java
+for (char c : v.toCharArray()) {
+    // something here...    
+}
+```
 
 ---
 
 Typical `git-cli` things,
 ```bash
 git add . && git commit -m "" && git push origin main
+```
+```bash
+# Fetch the latest changes from the remote repository
+git fetch origin
+git pull origin main
 ```
