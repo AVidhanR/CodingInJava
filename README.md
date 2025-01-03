@@ -19,7 +19,7 @@ for (int[] rows : matrix) {
     }
 }
 ```
-While using String's as char's the belo code is handy,
+While using String's as char's the below code is handy,
 ```java
 for (char c : v.toCharArray()) {
     // something here...    
