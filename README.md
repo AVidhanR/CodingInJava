@@ -37,3 +37,16 @@ git add . && git commit -m "" && git push origin main
 git fetch origin
 git pull origin main
 ```
+
+---
+
+The below code **check**
+```java
+// I ain't understood a thing the below code
+for (int t = n; t > 0; t /= 2) {
+    b = (t % 2) + b;
+}
+
+// so I used the below abstract method
+return Integer.toBinaryString(num);
+```
