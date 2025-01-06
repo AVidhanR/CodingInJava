@@ -3,7 +3,9 @@
  * n that divide n evenly (i.e., without leaving a remainder).
  * Return the total number of such digits.
  */
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class CountDigits {
     public static void main(String[] args) {
@@ -13,12 +15,13 @@ public class CountDigits {
         int n = sc.nextInt(), c = 0, t = n;
         int l = String.valueOf(n).length();
 
-        int[] arr = new int[l];
+        Set<Integer> s = new HashSet<>(l);
         for (int i = 0; i < l; i++, n /= 10) {
-            arr[i] = n % 10;
+            s.add(n % 10);
+        }
 
-            // => don't change the below order! LTR =>
-            if (t % arr[i] == 0) {
+        for (int ele : s) {
+            if (t % ele == 0) {
                 c++;
             }
         }
