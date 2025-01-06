@@ -1,5 +1,6 @@
 /**
- * You are given an array arr[], the task is to return a list elements of arr in alternate order (starting from index 0).
+ * You are given an array arr[], the task is to return a list elements of
+ * arr in alternate order (starting from index 0).
  */
 import java.util.Scanner;
 
@@ -17,6 +18,7 @@ public class AlternativesInAnArray {
             arr[i] = sc.nextInt();
         }
 
+        System.out.pritnln("\nElements of array in alternate positions: ")
         for (int i = 0; i < n; i += 2) {
             System.out.print(arr[i] + " ");
         }
