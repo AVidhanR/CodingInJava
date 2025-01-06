@@ -5,7 +5,7 @@ Follow me on LinkedIn: [in/AVidhanR](https://linkedin.com/in/AVidhanR)
 
 ---
 
-The Below codes, sure is handy
+The Below codes, sure are handy
 ```java
 // if return type is List<Integer>
 return Arrays.asList(a, b);
