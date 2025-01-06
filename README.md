@@ -25,6 +25,11 @@ for (char c : v.toCharArray()) {
     // something here...    
 }
 ```
+To find the length of an array in `java`
+```java
+int[] arr = new int[] {10, 11, 12, 13};
+int lengthOfArray = arr.length;
+```
 
 ---
 
