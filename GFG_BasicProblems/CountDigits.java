@@ -12,16 +12,10 @@ public class CountDigits {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int n = sc.nextInt(), c = 0, t = n;
-        int l = String.valueOf(n).length();
+        int n = sc.nextInt(), c = 0, t = n, l = String.valueOf(n).length();
 
-        Set<Integer> s = new HashSet<>(l);
         for (int i = 0; i < l; i++, n /= 10) {
-            s.add(n % 10);
-        }
-
-        for (int ele : s) {
-            if (t % ele == 0) {
+            if (n % 10 != 0 && t % (n % 10) == 0) {
                 c++;
             }
         }
