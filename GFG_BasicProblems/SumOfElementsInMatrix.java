@@ -26,6 +26,5 @@ public class SumOfElementsInMatrix {
 
         System.out.println("Sum of all elements in 2D matrix is: " + sum);
         sc.close();
-        return;
     }
 }

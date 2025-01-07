@@ -13,6 +13,5 @@ public class SumOfNNumbers {
 
         System.out.println("Sum Of N Numbers : " + sum);
         sc.close();
-        return;
     }
 }

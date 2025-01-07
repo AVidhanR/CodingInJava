@@ -20,6 +20,5 @@ public class SumOfOddEvenElements {
 
         System.out.println("Sum of odd and even elements from 1 to " + n + " is: " + oddSum + ", " + evenSum);
         sc.close();
-        return;
     }
 }

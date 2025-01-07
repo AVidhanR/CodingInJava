@@ -22,6 +22,5 @@ public class MultiplyArray {
 
         System.out.println("The Multiplication of elements in an array: " + m);
         sc.close();
-        return;
     }
 }

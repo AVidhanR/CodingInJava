@@ -17,6 +17,5 @@ public class SumOfDigits {
 
         System.out.println("Sum of digits of " + t + " is: " + sum);
         sc.close();
-        return;
     }
 }

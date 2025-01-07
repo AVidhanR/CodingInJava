@@ -33,6 +33,5 @@ public class DiamondPrinter {
         }
 
         sc.close();
-        return;
     }
 }

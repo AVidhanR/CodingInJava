@@ -23,6 +23,5 @@ public class CheckForBinaryString {
             System.out.println(s + " is not a binary.");
         }
         sc.close();
-        return;
     }
 }

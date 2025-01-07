@@ -28,6 +28,5 @@ public class CheckVowelOrNot {
         }
 
         sc.close();
-        return;
     }
 }

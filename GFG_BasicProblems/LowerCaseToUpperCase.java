@@ -13,6 +13,5 @@ public class LowerCaseToUpperCase {
 
         System.out.println(str + " => In Upper Case => " + str.toUpperCase());
         sc.close();
-        return;
     }
 }

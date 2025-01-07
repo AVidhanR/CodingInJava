@@ -18,6 +18,5 @@ public class CheckOddEven {
         }
 
         sc.close();
-        return;
     }
 }

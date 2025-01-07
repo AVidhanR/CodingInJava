@@ -22,6 +22,5 @@ public class CountDigits {
 
         System.out.println("Total number of digits divided by " + t + " is/are: " + c);
         sc.close();
-        return;
     }
 }

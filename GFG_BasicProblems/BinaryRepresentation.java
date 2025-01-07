@@ -29,6 +29,5 @@ public class BinaryRepresentation {
 
         System.out.println("Binary representation of (using abstract java in-built methods) " + n + " is: " + ShortBinaryRepresentation(n));
         sc.close();
-        return;
     }
 }

@@ -14,6 +14,5 @@ public class GreatestOfThreeNumbers {
 
         System.out.printf("The greatest of %d, %d and %d is: %d", a, b, c, max);
         sc.close();
-        return;
     }
 }

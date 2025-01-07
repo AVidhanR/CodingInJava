@@ -27,6 +27,5 @@ public class HalfDiamondPrinter {
         }
 
         sc.close();
-        return;
     }
 }

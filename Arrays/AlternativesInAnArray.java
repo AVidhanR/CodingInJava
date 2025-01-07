@@ -18,12 +18,11 @@ public class AlternativesInAnArray {
             arr[i] = sc.nextInt();
         }
 
-        System.out.pritnln("\nElements of array in alternate positions: ")
+        System.out.println("\nElements of array in alternate positions: ");
         for (int i = 0; i < n; i += 2) {
             System.out.print(arr[i] + " ");
         }
 
         sc.close();
-        return;
     }
 }
