@@ -33,3 +33,10 @@ public class DiamondPrinter {
     }
 }
 ```
+I'm so dumb (T_T)
+```java
+// palindrome - (init) r = 0
+for (; a != 0; a /= 10) {
+    r = (r * 10) + (a % 10);
+}
+```
