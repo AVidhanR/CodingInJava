@@ -11,7 +11,7 @@ public class ArmstrongNumber {
         int n = sc.nextInt(), l = String.valueOf(n).length(), t = n, an = 0;
 
         for (; n != 0; n /= 10) {
-            an += Math.pow((n % 10), l);
+            an += (int) Math.pow((n % 10), l);
         }
 
         if (an == t) {
