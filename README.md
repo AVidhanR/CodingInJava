@@ -41,7 +41,7 @@ int l = String.valueOf(n).length(); // 4
 
 Typical `git-cli` things,
 ```bash
-git add . && git commit -m "" && git push origin main
+git add . && git commit -m "" && git push
 ```
 ```bash
 # Fetch the latest changes from the remote repository
