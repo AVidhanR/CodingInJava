@@ -5,7 +5,7 @@ public class OptimizedReversingTheVowels {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String s = sc.nextLine();
+        String s = sc.nextLine().toLowerCase();
 
         String vowels = "aeiou";
         char[] sArr = s.toCharArray();
