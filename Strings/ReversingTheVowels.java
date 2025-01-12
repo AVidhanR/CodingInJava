@@ -9,32 +9,31 @@ public class ReversingTheVowels {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String s = sc.nextLine().toLowerCase(), v = "aeiou", r = ""; // in any case
-
-        boolean vc = false;
+        String s = sc.nextLine().toLowerCase(), v = "aeiou", vs = ""; // in any case
 
         for (char c : s.toCharArray()) {
             if (v.indexOf(c) != -1) {
-                r += c;
+                vs += c;
+            }
+        }
+        StringBuilder sb = new StringBuilder(vs);
+        vs = sb.reverse().toString();
+
+        char[] sArr = s.toCharArray();
+        char[] vsArr = vs.toCharArray();
+
+        for (
+            int i = 0, j = 0;
+            i < sArr.length && j < vsArr.length;
+            i++
+        ) {
+            if (v.indexOf(sArr[i]) != -1) {
+                sArr[i] = vsArr[j];
+                j++;
             }
         }
 
-//        for (int i = r.length() - 1, j = 0; i >= 0 && j < r.length(); i--, j++) {
-//            if (r.charAt(i) == r.charAt(j)) {
-//                vc = true;
-//            } else {
-//                vc = false;
-//                break;
-//            }
-//        }
-
-        // Nice problem
-
-//        if (vc) {
-//            System.out.println("It's reverse is equal! " + s);
-//        }
-
-        System.out.println(r);
+        System.out.println(new String(sArr));
         sc.close();
     }
 }
