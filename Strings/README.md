@@ -7,3 +7,8 @@ for (char c : s.toCharArray()) {
     }
 }
 ```
+replaceAll? it's nice...(using regex)
+```java
+String s = "HelloAll";
+return s.replaceAll("[aeiouAEIOU]", "");
+```
