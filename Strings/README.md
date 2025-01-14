@@ -16,3 +16,9 @@ taking character input's
 ```java
 char c = scanner.next().charAt(0);
 ```
+to check the type of char's
+```java
+Character.isUpperCase(c) // returns true if matched
+Character.isLowerCase(c) // similarly below, well it makes sense
+Character.isDigit(n)
+```
