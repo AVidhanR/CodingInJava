@@ -3,9 +3,7 @@
  * n that divide n evenly (i.e., without leaving a remainder).
  * Return the total number of such digits.
  */
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 public class CountDigits {
     public static void main(String[] args) {

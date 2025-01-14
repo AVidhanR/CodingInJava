@@ -10,7 +10,7 @@ public class DiamondPrinter {
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
 
-        // upper triangle upto n *'s
+        // upper triangle up to n *'s
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 System.out.print(" ");
@@ -21,7 +21,7 @@ public class DiamondPrinter {
             System.out.println();
         }
 
-        // lower triangle upto n-1 *'s
+        // lower triangle up to n-1 *'s
         for (int i = n - 2; i >= 0; i--) {
             for (int j = 0; j < n - i - 1; j++) {
                 System.out.print(" ");
