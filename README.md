@@ -61,3 +61,7 @@ for (int t = n; t > 0; t /= 2) {
 // so I used the below abstract method
 return Integer.toBinaryString(num);
 ```
+Well, if you want to return `int` values as an array of `int` for example; the below code is handy,
+```java
+return new int[] {1, 2, 3}; // or {a, b, c} if they have data init.
+```
