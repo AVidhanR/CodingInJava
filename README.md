@@ -65,3 +65,40 @@ Well, if you want to return `int` values as an array of `int` for example; the b
 ```java
 return new int[] {1, 2, 3}; // or {a, b, c} if they have data init.
 ```
+
+---
+
+The `find` command sure is handy
+- The find command in Bash is a powerful tool for searching and locating files and directories based on various conditions. Here's a comprehensive overview:
+Basic Syntax,
+```bash
+find [options] [path] [expression]
+```
+### Options
+- -name: Search by file name
+- -iname: Search by file name (case-insensitive)
+- -type: Search by file type (e.g., f for files, d for directories)
+- -size: Search by file size
+- -mtime: Search by modification time
+- -atime: Search by access time
+- -ctime: Search by creation time
+- -exec: Execute a command on the found files
+- -ok: Similar to -exec, but prompts for confirmation before executing
+### Expressions
+- -a: Logical AND operator
+- -o: Logical OR operator
+- !: Logical NOT operator
+### Examples
+- Find files by name: find . -name "example.txt"
+- Find files by type: find . -type f -name "*.txt"
+- Find files larger than 1MB: find . -size +1M
+- Find files modified within the last 24 hours: find . -mtime -1
+- Delete files older than 30 days: find . -type f -mtime +30 -delete
+- Execute a command on found files: find . -type f -name "*.txt" -exec cat {} \;
+### Tips and Tricks
+- Use . to search in the current directory and its subdirectories.
+- Use ~ to search in the user's home directory.
+- Use ! to negate a condition (e.g., ! -name "*.txt").
+- Use parentheses to group conditions (e.g., ( -name "*.txt" -o -name "*.pdf" )).
+- Use -print to print the found files (default behavior).
+- Use -exec with {} \; to execute a command on each found file.
