@@ -12,3 +12,7 @@ replaceAll? it's nice...(using regex)
 String s = "HelloAll";
 return s.replaceAll("[aeiouAEIOU]", "");
 ```
+taking character input's
+```java
+char c = scanner.next().charAt(0);
+```
