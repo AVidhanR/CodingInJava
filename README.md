@@ -11,6 +11,13 @@ The Below codes, sure are handy
 // if return type is List<Integer>
 return Arrays.asList(a, b);
 ```
+I'm lazy, so I did this
+
+```java
+import java.util.Arrays;
+// gives the sum!
+int s = Arrays.stream(array).sum();
+```
 In 2D matrix, the below code is handy
 ```java
 // for traversing and other element level operations
