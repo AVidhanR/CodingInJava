@@ -11,11 +11,14 @@ public class FindNthTerm {
     int n = sc.nextInt();
 
     for (
-        int i = 0, j = 1;
-        i <= n;
-        i += j
+        int i = 1, j = 2, c = 1;
+        c <= n;
+        i += j, c++, j++
     ) {
-
+      if (c == n) {
+        System.out.println("The " + n + "th term is: " + i);
+        break;
+      }
     }
 
     sc.close();
