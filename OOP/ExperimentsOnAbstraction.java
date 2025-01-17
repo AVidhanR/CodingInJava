@@ -2,7 +2,9 @@
  * OOP Concept: Abstraction [Recap]
  */
 
-class Student {
+// every class extends the Object class by default!
+// wow!
+class Student extends Object {
   private String name;
 
   public String getName() {
