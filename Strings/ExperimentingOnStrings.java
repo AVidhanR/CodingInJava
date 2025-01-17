@@ -10,6 +10,8 @@ public class ExperimentingOnStrings {
     // mutable string
     StringBuffer sbr = new StringBuffer("AVidhanR");
     sbr.append(" CSE Student");
+    // offset means index!
+    sbr.insert(0, "This is ");
 
     // immutable string - in the sense that it creates a new string constant in the pool
     // rather than changing the existing one.
