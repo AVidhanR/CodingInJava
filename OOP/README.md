@@ -7,4 +7,10 @@ enum Status {
 
 // In main method
 Status s = Status.Failed; // works just right!
+
+// can get the array of the enum constants
+Status s[] = Status.values();
+for (Status ele : s) {
+System.out.println(ele + " : " + ele.ordinal());
+}
 ```
