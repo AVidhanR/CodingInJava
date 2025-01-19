@@ -4,7 +4,7 @@
 
 // every class extends the Object class by default!
 // wow!
-class Student extends Object {
+class Person extends Object {
   private String name;
 
   public String getName() {
@@ -16,12 +16,28 @@ class Student extends Object {
   }
 }
 
+class Student extends Person {
+  public void show() {
+    System.out.println("This is Person");
+  }
+}
+
+
 
 public class ExperimentsOnAbstraction {
   public static void main(String[] args) {
-    Student s1 = new Student();
+    Person p1 = new Person();
 
-    s1.setName("AVidhanR");
-    System.out.println(s1.getName());
+    p1.setName("AVidhanR");
+    System.out.println(p1.getName());
+
+    // implicitly has Person UpCasting
+    // no need to mention
+    Person p2 = new Student();
+    // p2.show() can't use this!
+
+    Student s1 = (Student) p2;
+    // DownCasting
+    s1.show();
   }
 }
