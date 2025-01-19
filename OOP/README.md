@@ -9,7 +9,7 @@ enum Status {
 Status s = Status.Failed; // works just right!
 
 // can get the array of the enum constants
-Status s[] = Status.values();
+Status ss[] = Status.values();
 for (Status ele : s) {
 System.out.println(ele + " : " + ele.ordinal());
 }
