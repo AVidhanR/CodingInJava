@@ -4,6 +4,7 @@
 
 abstract class A {
   public abstract void show();
+  public abstract void config();
 }
 
 public class AbstractAndInnerClass {
@@ -12,8 +13,13 @@ public class AbstractAndInnerClass {
       public void show() {
         System.out.println("In Anonymous Class Implementation");
       }
+
+      public void config() {
+        System.out.println("In Config");
+      }
     };
 
     obj.show();
+    obj.config();
   }
 }
