@@ -35,5 +35,14 @@ public class InnerClass {
     // is possible if the inner class is static
     Database.Platform platform = new Database.Platform();
     platform.showPlatform();
+
+    // Anonymous Inner Class
+    Database newDB = new Database() {
+      public void show() {
+        System.out.println("In the new Database Anonymous show method");
+      }
+    };
+    newDB.show();
+
   }
 }
