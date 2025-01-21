@@ -13,4 +13,7 @@ Status ss[] = Status.values();
 for (Status ele : s) {
 System.out.println(ele + " : " + ele.ordinal());
 }
+
+// can compare too!
+// can't extend the enum class
 ```
