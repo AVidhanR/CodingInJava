@@ -40,3 +40,8 @@ for (; a != 0; a /= 10) {
     r = (r * 10) + (a % 10);
 }
 ```
+It's weird
+```java
+int num = System.in.read();
+// gives ASCII value
+```
