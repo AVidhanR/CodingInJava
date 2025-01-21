@@ -50,5 +50,27 @@ public class ExperimentingCollection {
     System.out.println(students);
     // one can also use HashTable<>() rather than HashMap<>()
     // diff: HashTable is synchronized and other is not.
+
+    // to sort or experiment a collection of any type
+    Collections.sort(numbs); // simple sorting
+
+    Comparator<String> com = new Comparator<String>() {
+      public int compare(String o1, String o2) {
+        if (o1.length() > o2.length())
+          return 1;
+        else
+          return -1;
+      }
+    };
+
+    List<String> names = new ArrayList<>();
+    names.add("Vidhan");
+    names.add("Vin");
+    names.add("AVidhanR");
+    names.add("Reddy");
+
+    // use your custom logic to sort with the help of Comparator Interface
+    Collections.sort(names, com);
+    System.out.println(names);
   }
 }
