@@ -17,3 +17,26 @@ System.out.println(ele + " : " + ele.ordinal());
 // can compare too!
 // can't extend the enum class
 ```
+Using constructors in enum's
+
+```java
+enum Laptop {
+  Macbook(2000), ThinkPad(1500);
+
+  private int price;
+
+  // can have a constructor!
+  private Laptop(int price) {
+    this.price = price;
+  }
+
+  // can write user-defined functions too!
+  public void setPrice(int price) {
+    this.price = price;
+  }
+
+  public int getPrice() {
+    return price;
+  }
+}
+```
