@@ -1,5 +1,5 @@
 ## OOP Concepts
-ENumerators in java are just like any other programming languages!
+ENumerators in java are just like any other programming languages have!
 ```java
 enum Status {
   Running, Pending, Failed; // tbh, they are simply Constants
