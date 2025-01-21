@@ -6,6 +6,7 @@ class Counter {
   int count;
 
   // only one exec at a time
+  // to avoid race around condition
   public synchronized void inc() {
     count++;
   }
@@ -31,6 +32,9 @@ public class ExperimentingThreads {
     t2.start();
 
     try {
+
+      // main method waits until the thread's completes
+      // their assigned task.
       t1.join();
       t2.join();
     } catch (InterruptedException e) {
