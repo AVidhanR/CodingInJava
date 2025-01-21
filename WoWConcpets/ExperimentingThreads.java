@@ -2,26 +2,41 @@
  * Threads Concept: The OP Thing in java
  */
 
+class Counter {
+  int count;
+
+  // only one exec at a time
+  public synchronized void inc() {
+    count++;
+  }
+}
+
 public class ExperimentingThreads {
   public static void main(String[] args) {
+    Counter c = new Counter();
 
     /** using lambda expressions; as Runnable interface is a {@FunctionalInterface} */
-    new Thread(() -> {
-    for (int i = 1; i <= 100; i++) {
-        System.out.println(i + "th Hello");
-        try {
-          Thread.sleep(10);
-        } catch (InterruptedException e) { e.printStackTrace(); }
+    Thread t1 = new Thread(() -> {
+    for (int i = 1; i <= 1000; i++) {
+        c.inc();
       }
-    }).start();
+    });
+    t1.start();
 
-    new Thread(() -> {
-    for (int i = 1; i <= 100; i++) {
-        System.out.println(i + "th Hello");
-        try {
-          Thread.sleep(10);
-        } catch (InterruptedException e) { e.printStackTrace(); }
+    Thread t2 = new Thread(() -> {
+    for (int i = 1; i <= 1000; i++) {
+        c.inc();
       }
-    }).start();
+    });
+    t2.start();
+
+    try {
+      t1.join();
+      t2.join();
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    }
+
+    System.out.println(c.count);
   }
 }
