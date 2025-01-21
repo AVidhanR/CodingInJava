@@ -1,7 +1,2 @@
 .idea
-Arithmetic/*.class
-Arrays/*.class
-Sets/*.class
-Strings/*.class
-OOP/*.class
 *.class
