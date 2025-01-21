@@ -28,6 +28,23 @@ class Students implements Comparable<Students> {
 
 public class TheComparator {
   public static void main(String[] args) {
+    // below are the steps of transition from normal way to the lambda way =>
+    /* Comparator<Students> comp = (Students o1, Students o2) -> {
+              @Override
+              public int compare (Students o1, Students o2) {
+                    if (o1.age > o2.age) return 1;
+                    else return 0;
+              }
+    */ };
+    /* Comparator<Students> comp = (Students o1, Students o2) -> {
+              @Override
+              public int compare (Students o1, Students o2) {
+                    return (o1.age > o2.age) ? 1 : 0;
+              }
+    */ };
+    // Comparator<Students> comp = (Students o1, Students o2) -> { return (o1.age > o2.age) ? 1 : 0; }
+    // Comparator<Students> comp = (Students o1, Students o2) -> (o1.age > o2.age) ? 1 : 0;
+
     Comparator<Students> comp = (o1, o2) -> (o1.age > o2.age) ? 1 : 0;
 
     List<Students> studs = new ArrayList<>();
