@@ -37,5 +37,18 @@ public class ExperimentingCollection {
     while (values.hasNext()) {
       System.out.println(values.next());
     }
+    System.out.println();
+
+    // it's a key value pairs with different use cases
+    // keys are unique but values can be!
+    Map<String, Integer> students = new HashMap<>();
+    students.put("Vidhan", 501);
+    students.put("Vin", 500);
+    for (String k : students.keySet()) {
+      System.out.println(k + " : " + students.get(k));
+    }
+    System.out.println(students);
+    // one can also use HashTable<>() rather than HashMap<>()
+    // diff: HashTable is synchronized and other is not.
   }
 }
