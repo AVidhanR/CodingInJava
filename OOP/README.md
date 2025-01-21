@@ -25,6 +25,7 @@ enum Laptop {
 
   private int price;
 
+  // specify default constructor if one don't want to use price
   // can have a constructor!
   private Laptop(int price) {
     this.price = price;
