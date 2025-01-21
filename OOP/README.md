@@ -41,3 +41,15 @@ enum Laptop {
   }
 }
 ```
+Lambda Expressions are so cool! just like arrow functions that I learned from `javascript`
+```java
+@FunctionalInterface
+interface A {
+  void show();
+}
+
+// inside main function
+A a = () -> {
+  System.out.println("Hi Lambda");
+};
+```
