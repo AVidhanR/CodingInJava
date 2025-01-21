@@ -11,8 +11,7 @@ public class TypesOfInputTaking {
   public static void main(String[] args) throws IOException {
     System.out.print("Enter a number: ");
 
-    InputStreamReader isr = new InputStreamReader(System.in);
-    BufferedReader br = new BufferedReader(isr);
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int num = Integer.parseInt(br.readLine());
     System.out.println(num);
 
@@ -22,7 +21,6 @@ public class TypesOfInputTaking {
     System.out.println(num2);
 
     sc.close();
-    isr.close();
     br.close();
   }
 }
