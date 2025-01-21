@@ -2,7 +2,7 @@
  * Threads Concept: The OP Thing in java
  */
 
-class ThreadOne extends Thread {
+class ThreadOne implements Runnable {
   @Override
   public void run() {
     for (int i = 1; i <= 100; i++) {
@@ -14,7 +14,7 @@ class ThreadOne extends Thread {
   }
 }
 
-class ThreadTwo extends Thread {
+class ThreadTwo implements Runnable {
   @Override
   public void run() {
     for (int i = 1; i <= 100; i++) {
@@ -28,7 +28,10 @@ class ThreadTwo extends Thread {
 
 public class ExperimentingThreads {
   public static void main(String[] args) {
-    new ThreadOne().start();
-    new ThreadTwo().start();
+    Runnable r1 = new ThreadOne();
+    Runnable r2 = new ThreadTwo();
+
+    new Thread(r1).start();
+    new Thread(r2).start();
   }
 }
