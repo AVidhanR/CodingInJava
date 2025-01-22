@@ -23,9 +23,11 @@ class B implements AOne {
 }
 
 class C implements AOne, X {
+  @Override
   public void show() {
     System.out.println("In Show of class C");
   }
+  @Override
   public void post() {
     System.out.println("In post of class C");
   }
