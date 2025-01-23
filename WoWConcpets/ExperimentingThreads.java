@@ -5,7 +5,7 @@
 class Counter {
   int count;
 
-  // synchronised keyword is used for below reason,
+  // synchronized keyword is used for below reason,
   // only one exec at a time
   // to avoid race around condition
   public synchronized void inc() {
