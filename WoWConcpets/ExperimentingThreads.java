@@ -39,7 +39,7 @@ public class ExperimentingThreads {
       t1.join();
       t2.join();
     } catch (InterruptedException e) {
-      throw new RuntimeException(e);
+      e.printStackTrace();
     }
 
     System.out.println(c.count);
