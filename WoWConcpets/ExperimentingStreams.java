@@ -13,7 +13,11 @@ public class ExperimentingStreams {
     // forEach sure is handy...
     List<Integer> l = Arrays.asList(10, 20, 30, 40, 50);
     l.forEach((n) -> {
-      System.out.println(n);
+      if (n % 2 == 0) {
+        System.out.println(n + " is even.");
+      } else {
+        System.out.println(n + " is odd.");
+      }
     });
 
 
