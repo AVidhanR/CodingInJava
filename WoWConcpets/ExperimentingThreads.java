@@ -5,6 +5,7 @@
 class Counter {
   int count;
 
+  // synchronized keyword is used for below reason,
   // only one exec at a time
   // to avoid race around condition
   public synchronized void inc() {
@@ -38,7 +39,7 @@ public class ExperimentingThreads {
       t1.join();
       t2.join();
     } catch (InterruptedException e) {
-      throw new RuntimeException(e);
+      e.printStackTrace();
     }
 
     System.out.println(c.count);

@@ -16,15 +16,18 @@ interface Y extends X {} // possible! but need to,
 // implement the methods available in X into the implemented class!
 
 class B implements AOne {
+  @Override
   public void show() {
     System.out.println("In show method");
   }
 }
 
 class C implements AOne, X {
+  @Override
   public void show() {
     System.out.println("In Show of class C");
   }
+  @Override
   public void post() {
     System.out.println("In post of class C");
   }
