@@ -27,5 +27,10 @@ public class ExperimentingStreams {
     Stream<Integer> s2 = s1.filter(n -> n%2 == 0);
     s2.forEach(n -> System.out.println(n));
 
+    int result = l.stream()
+        .filter(n -> n % 2 == 0)
+        .map(n -> n * 2)
+        .reduce(0, (c, e) -> c + e);
+    System.out.println(result);
   }
 }
