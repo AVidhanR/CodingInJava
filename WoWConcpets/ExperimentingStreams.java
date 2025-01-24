@@ -32,5 +32,8 @@ public class ExperimentingStreams {
         .map(n -> n * 2)
         .reduce(0, (c, e) -> c + e);
     System.out.println(result);
+
+    s1.close();
+    s2.close();
   }
 }
