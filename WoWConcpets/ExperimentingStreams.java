@@ -11,7 +11,7 @@ public class ExperimentingStreams {
   public static void main(String[] args) {
 
     // forEach sure is handy...
-    List<Integer> l = Arrays.asList(10, 20, 30, 40, 50);
+    List<Integer> l = Arrays.asList(10, 21, 30, 41, 50);
     l.forEach((n) -> {
       if (n % 2 == 0) {
         System.out.println(n + " is even.");
@@ -20,6 +20,12 @@ public class ExperimentingStreams {
       }
     });
 
+    // it's like a passing river water
+    // only one time usage; cannot use it again
+    // long format
+    Stream<Integer> s1 = l.stream();
+    Stream<Integer> s2 = s1.filter(n -> n%2 == 0);
+    s2.forEach(n -> System.out.println(n));
 
   }
 }
