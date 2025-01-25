@@ -2,7 +2,7 @@
  * Data Structures and Algorithms: Linear Search Algorithm implementation
  */
 
-package dev.itsvidhanreddy.SearchingAlgorithms;
+package dev.itsvidhanreddy.DSA;
 
 import java.util.Scanner;
 
