@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 /**
  * Below are the new @features of java,
  *  - [var] type inference (New Keyword)
@@ -11,6 +9,8 @@ import java.util.Objects;
  *      - [sealed] class
  *      - [non-sealed] class
  *  - [record] classes
+ *    - all the values in the [record] are final and private
+ *    - used for storing the record like data
  */
 
 // SEALED KEYWORD
@@ -36,44 +36,7 @@ sealed interface interfaceOne permits interfaceTwo {}
 non-sealed interface interfaceTwo extends interfaceOne {}
 
 // RECORD KEYWORD
-class User {
-  private final String name;
-  private final int id;
-
-  User(String name, int id) {
-    this.name = name;
-    this.id = id;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public int getId() {
-    return id;
-  }
-
-  @Override
-  public String toString() {
-    return "User { " +
-        "name = '" + name + '\'' +
-        ", id = " + id +
-        " }";
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    User user = (User) o;
-    return id == user.id && Objects.equals(name, user.name);
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(name, id);
-  }
-}
+record User(String name, int id) {}
 
 // MAIN METHOD
 public class NewFeaturesInJava {
