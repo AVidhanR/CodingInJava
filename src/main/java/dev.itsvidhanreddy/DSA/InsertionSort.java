@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class InsertionSort {
 
-  public static void selectionSort(int[] arr) {
+  public static void insertionSort(int[] arr) {
     int key = 0;
     int length = arr.length;
 
@@ -37,7 +37,7 @@ public class InsertionSort {
       arr[i] = sc.nextInt();
     }
 
-    selectionSort(arr);
+    insertionSort(arr);
 
     System.out.println("Sorted array using Insertion Sort: ");
     for (int ele : arr) {
