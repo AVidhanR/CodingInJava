@@ -39,6 +39,24 @@ public class LinkedList {
     head = newNode;
   }
 
+  public void insertAt(int index, int data) {
+    Node newNode = new Node(data);
+
+    if (head == null) {
+      head = newNode;
+    } else {
+      Node tempNode = head;
+      // traversal to index-1 position.
+      // imagine it!
+      for (int i = 0; i < index - 1; i++) {
+        tempNode = tempNode.next;
+      }
+      newNode.next = tempNode.next;
+      tempNode.next = newNode;
+    }
+
+  }
+
   public void displayLinkedList() {
     Node node = head;
 
@@ -52,11 +70,14 @@ public class LinkedList {
 
   public static void main(String[] args) {
     LinkedList linkedList = new LinkedList();
+
      for (int i = 10; i <= 20; i++) {
        linkedList.insert(i);
      }
 
      linkedList.insertAtStart(25);
+
+     linkedList.insertAt(1, 100);
 
      linkedList.displayLinkedList();
   }
