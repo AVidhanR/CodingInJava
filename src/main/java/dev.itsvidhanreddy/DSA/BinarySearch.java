@@ -27,6 +27,16 @@ public class BinarySearch {
     return 0;
   }
 
+  public static int recursiveBinarySearch(int[] arr, int se, int start, int end) {
+    if (start <= end) {
+      int mid = (start + end) / 2;
+      if (se == arr[mid]) return mid;
+      else if (se < arr[mid]) return recursiveBinarySearch(arr, se, start, mid - 1);
+      else return recursiveBinarySearch(arr, se, mid + 1, end);
+    }
+    return -1;
+  }
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -50,6 +60,8 @@ public class BinarySearch {
     } else {
       System.out.println(se + " is not found");
     }
+
+    System.out.println("Element found at index: " + recursiveBinarySearch(arr, se, 0, arr.length - 1));
 
     sc.close();
   }
