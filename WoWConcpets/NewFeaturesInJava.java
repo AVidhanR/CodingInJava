@@ -36,7 +36,16 @@ sealed interface interfaceOne permits interfaceTwo {}
 non-sealed interface interfaceTwo extends interfaceOne {}
 
 // RECORD KEYWORD
-record User(String name, int id) {}
+record User(String name, int id) {
+  public User {
+    if (id == 0)
+      try {
+        throw new InterruptedException("Please enter an id which is greater than 0");
+      } catch (InterruptedException e) {
+        System.out.println(e.getMessage());
+      }
+  }
+}
 
 // MAIN METHOD
 public class NewFeaturesInJava {
@@ -45,7 +54,9 @@ public class NewFeaturesInJava {
     var a = 10;
     System.out.println("Printing the var declared value: " + a);
 
-    User u1 = new User("AVidhanR", 1);
+    User u1 = new User("AVidhanR", 0);
+    User u2 = new User("Vin", 1);
     System.out.println(u1);
+    System.out.println(u2);
   }
 }
