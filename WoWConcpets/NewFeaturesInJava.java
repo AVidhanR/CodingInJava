@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /**
  * Below are the new @features of java,
  *  - [var] type inference (New Keyword)
@@ -8,9 +10,10 @@
  *      - [final] class
  *      - [sealed] class
  *      - [non-sealed] class
- *  -
+ *  - [record] classes
  */
 
+// SEALED KEYWORD
 sealed class ClassOne permits ClassTwo, ClassThree {
   void show() {
     System.out.println("In Sealed ClassOne");
@@ -32,12 +35,54 @@ sealed interface interfaceOne permits interfaceTwo {}
 // !remember interface can either be [sealed] or [non-sealed]
 non-sealed interface interfaceTwo extends interfaceOne {}
 
+// RECORD KEYWORD
+class User {
+  private final String name;
+  private final int id;
+
+  User(String name, int id) {
+    this.name = name;
+    this.id = id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  @Override
+  public String toString() {
+    return "User { " +
+        "name = '" + name + '\'' +
+        ", id = " + id +
+        " }";
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    User user = (User) o;
+    return id == user.id && Objects.equals(name, user.name);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, id);
+  }
+}
+
+// MAIN METHOD
 public class NewFeaturesInJava {
   public static void main(String[] args) {
     // can't use var as a className here
     var a = 10;
     System.out.println("Printing the var declared value: " + a);
 
-
+    User u1 = new User("AVidhanR", 1);
+    System.out.println(u1);
   }
 }
