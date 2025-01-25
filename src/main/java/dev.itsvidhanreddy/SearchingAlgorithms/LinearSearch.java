@@ -44,8 +44,7 @@ public class LinearSearch {
       System.out.println(se + " is not found");
     }
 
-    String result = linearSearchWithIndex(arr, se);
-    System.out.println(result);
+    System.out.println(linearSearchWithIndex(arr, se));
 
     sc.close();
   }
