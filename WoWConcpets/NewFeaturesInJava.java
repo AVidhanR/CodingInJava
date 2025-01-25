@@ -3,6 +3,11 @@
  *  - [var] type inference (New Keyword)
  *  - [sealed] classes (New Concept in OOP)
  *    - It's used to restrict the class that stands between [abstract] class and [final] class.
+ *    - [permits] keyword is used to give the access of inheritance to the respective classes
+ *    - The permitted class should either be one of the below,
+ *      - [final] class
+ *      - [sealed] class
+ *      - [non-sealed] class
  *  -
  */
 
@@ -13,8 +18,14 @@ sealed class ClassOne permits ClassTwo, ClassThree {
 }
 
 // sealed or non-sealed or final needed to added for permitting classes
+// [ClassTwo] can be extended by anyone as it's [non-sealed]
 non-sealed class ClassTwo extends ClassOne {}
-non-sealed class ClassThree extends ClassOne {}
+
+// can be inherited by only [ClassFour] and no other class
+sealed class ClassThree extends ClassOne permits ClassFour {}
+
+// It should be one of any three above
+final class ClassFour {}
 
 public class NewFeaturesInJava {
   public static void main(String[] args) {
