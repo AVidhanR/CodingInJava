@@ -33,6 +33,12 @@ public class LinkedList {
 
   }
 
+  public void insertAtStart(int data) {
+    Node newNode = new Node(data);
+    newNode.next = head;
+    head = newNode;
+  }
+
   public void displayLinkedList() {
     Node node = head;
 
@@ -49,6 +55,8 @@ public class LinkedList {
      for (int i = 10; i <= 20; i++) {
        linkedList.insert(i);
      }
+
+     linkedList.insertAtStart(25);
 
      linkedList.displayLinkedList();
   }
