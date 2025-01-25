@@ -25,7 +25,12 @@ non-sealed class ClassTwo extends ClassOne {}
 sealed class ClassThree extends ClassOne permits ClassFour {}
 
 // It should be one of any three above
-final class ClassFour {}
+final class ClassFour extends ClassThree {}
+
+sealed interface interfaceOne permits interfaceTwo {}
+
+// !remember interface can either be [sealed] or [non-sealed]
+non-sealed interface interfaceTwo extends interfaceOne {}
 
 public class NewFeaturesInJava {
   public static void main(String[] args) {
