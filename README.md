@@ -109,3 +109,10 @@ find [options] [path] [expression]
 - Use parentheses to group conditions (e.g., ( -name "*.txt" -o -name "*.pdf" )).
 - Use -print to print the found files (default behavior).
 - Use -exec with {} \; to execute a command on each found file.
+
+---
+ Bash Script is a lifesaver for lazy people like myself,
+ ```bash
+ bash ./startup.sh
+ # removes all the existing .class files and fetches the data from github on latest changes
+ ```
