@@ -71,8 +71,37 @@ public class LinkedList {
       }
       tempNode.next = newNode;
     }
+
   }
 
+  public void deleteAt(int index) {
+
+    if (index == 0) {
+      head = head.next;
+    } else {
+      Node tempNode = head;
+      for (int i = 0; i < index - 1; i++) {
+        tempNode = tempNode.next;
+      }
+      tempNode.next = tempNode.next.next;
+    }
+
+  }
+
+  public int length() {
+    int length = 0;
+    Node tempNode = head;
+
+    if (head == null) return 0;
+    else {
+      while (tempNode.next != null) {
+        ++length;
+        tempNode = tempNode.next;
+      }
+    }
+
+    return length;
+  }
 
   public void displayLinkedList() {
     Node node = head;
@@ -95,6 +124,10 @@ public class LinkedList {
      linkedList.insertAt(1, 100);
      linkedList.insertAtLast(49);
 
+     linkedList.deleteAt(linkedList.length());
+
      linkedList.displayLinkedList();
+
+     System.out.println("Length of the linked list: " + linkedList.length());
   }
 }
