@@ -37,6 +37,10 @@ non-sealed interface interfaceTwo extends interfaceOne {}
 
 // RECORD KEYWORD
 record User(String name, int id) {
+  // can create only the static variable here
+  // normal variables should be mentioned in the above while declaring the record itself!
+  static int a;
+
   public User {
     if (id == 0)
       try {
@@ -58,5 +62,9 @@ public class NewFeaturesInJava {
     User u2 = new User("Vin", 1);
     System.out.println(u1);
     System.out.println(u2);
+
+    // as there are no getters and setters in record
+    // use the variable name and a `()` as below,
+    System.out.println("name of user 1: " + u1.name());
   }
 }
