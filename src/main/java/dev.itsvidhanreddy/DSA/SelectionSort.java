@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class SelectionSort {
 
   public static void selectionSort(int[] arr) {
-    int minIndex = -1;
+    int minIndex = 0;
     int length = arr.length;
     int temp = 0;
 
