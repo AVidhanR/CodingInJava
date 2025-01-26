@@ -1,4 +1,4 @@
-# Coding In Java
+# Java In Practice
 Finally, I can put my time into learning `Java` for real.
 
 - Access the root of the codebase from [`here`](src/main/java/dev/itsvidhanreddy/) 
