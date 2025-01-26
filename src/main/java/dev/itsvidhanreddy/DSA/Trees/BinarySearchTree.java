@@ -4,8 +4,6 @@
 
 package dev.itsvidhanreddy.DSA.Trees;
 
-import com.sun.source.tree.Tree;
-
 class Node {
   int data;
   Node left;
