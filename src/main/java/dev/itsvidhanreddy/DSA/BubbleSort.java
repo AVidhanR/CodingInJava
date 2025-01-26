@@ -17,10 +17,10 @@ public class BubbleSort {
       // so used the pass concept...
       for (int j = 0; j < pass - i - 1; j++) {
         // ascending order
-        if (arr[j] > arr[j+1]) {
+        if (arr[j] > arr[j + 1]) {
           temp = arr[j];
-          arr[j] = arr[j+1];
-          arr[j+1] = temp;
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
         }
       }
     }

@@ -92,7 +92,8 @@ public class LinkedList {
     int length = 0;
     Node tempNode = head;
 
-    if (head == null) return 0;
+    if (head == null)
+      return 0;
     else {
       while (tempNode.next != null) {
         ++length;
@@ -117,17 +118,17 @@ public class LinkedList {
   public static void main(String[] args) {
     LinkedList linkedList = new LinkedList();
 
-     for (int i = 10; i <= 20; i++) {
-       linkedList.insert(i);
-     }
-     linkedList.insertAtStart(25);
-     linkedList.insertAt(1, 100);
-     linkedList.insertAtLast(49);
+    for (int i = 10; i <= 20; i++) {
+      linkedList.insert(i);
+    }
+    linkedList.insertAtStart(25);
+    linkedList.insertAt(1, 100);
+    linkedList.insertAtLast(49);
 
-     linkedList.deleteAt(linkedList.length());
+    linkedList.deleteAt(linkedList.length());
 
-     linkedList.displayLinkedList();
+    linkedList.displayLinkedList();
 
-     System.out.println("Length of the linked list: " + linkedList.length());
+    System.out.println("Length of the linked list: " + linkedList.length());
   }
 }

@@ -10,14 +10,16 @@ public class LinearSearch {
 
   public static int linearSearch(int[] arr, int se) {
     for (int i : arr) {
-      if (i == se) return 1;
+      if (i == se)
+        return 1;
     }
     return 0;
   }
 
   public static String linearSearchWithIndex(int[] arr, int se) {
     for (int i = 0; i < arr.length; i++) {
-      if (arr[i] == se) return ("Element " + se + " is found under index " + i);
+      if (arr[i] == se)
+        return ("Element " + se + " is found under index " + i);
     }
     return "Element " + se + " not found";
   }

@@ -30,9 +30,12 @@ public class BinarySearch {
   public static int recursiveBinarySearch(int[] arr, int se, int start, int end) {
     if (start <= end) {
       int mid = (start + end) / 2;
-      if (se == arr[mid]) return mid;
-      else if (se < arr[mid]) return recursiveBinarySearch(arr, se, start, mid - 1);
-      else return recursiveBinarySearch(arr, se, mid + 1, end);
+      if (se == arr[mid])
+        return mid;
+      else if (se < arr[mid])
+        return recursiveBinarySearch(arr, se, start, mid - 1);
+      else
+        return recursiveBinarySearch(arr, se, mid + 1, end);
     }
     return -1;
   }
