@@ -49,8 +49,21 @@ int l = String.valueOf(n).length(); // 4
 ```
 
 ## Typical `git-cli`
+git initial process
+```bash
+git init -b main
+# to check the logs
+git log
+```
+The after-math,
 ```bash
 git add . && git commit -m "" && git push
+# skip staging or adding and directly commit
+git commit -a -m "message"
+# changes made?
+git diff
+# rm the env from git if staged
+git rm --cached env
 ```
 
 Fetch the latest changes from the remote repository,
