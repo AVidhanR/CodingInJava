@@ -1,7 +1,7 @@
 # Coding In Java
 Finally, I can put my time into learning `Java` for real.
 
-- Access the main codebase root from [`here`](src/main/java/dev/itsvidhanreddy/) 
+- Access the root of the codebase from [`here`](src/main/java/dev/itsvidhanreddy/) 
 - Learning the basic program problems from [`gfg/basic-programming-problems`](https://www.geeksforgeeks.org/basic-programming-problems/) 
 - Feel free to visit my portfolio from [`itvidhanreddy.vercel.app`](https://itsvidhanreddy.vercel.app) 
 - Follow me on LinkedIn: [`in/AVidhanR`](https://linkedin.com/in/AVidhanR) 
