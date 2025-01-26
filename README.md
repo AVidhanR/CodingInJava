@@ -1,5 +1,6 @@
 Nothing much here, Just basic Java Coding that I'm wanting to learn from years!
 
+The main codebase root [here](src/main/java/dev/itsvidhanreddy/) \
 Learning the basic program problems from [here](https://www.geeksforgeeks.org/basic-programming-problems/) \
 Feel free to visit my portfolio from [here](https://itsvidhanreddy.vercel.app) \
 Follow me on LinkedIn: [in/AVidhanR](https://linkedin.com/in/AVidhanR) 
