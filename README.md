@@ -129,4 +129,4 @@ find [options] [path] [expression]
  bash ./StartUpProcess.sh
  # removes all the existing .class files and fetches the data from github on latest changes
  ```
-This YouTube vidoe for jave is good: [`link`](https://youtu.be/4XTsAAHW_Tc?si=fTRuJu1kjPDS6KNX)
+This YouTube vidoe for learning full stack `jave` is good: [`link`](https://youtu.be/4XTsAAHW_Tc?si=fTRuJu1kjPDS6KNX)
