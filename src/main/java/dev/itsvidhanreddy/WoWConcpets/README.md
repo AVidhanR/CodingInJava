@@ -23,3 +23,5 @@ int result = l.stream()
     .reduce(0, (c, e) -> c + e);
     System.out.println(result);
 ```
+
+Maintained by [AVidhanR](https://linkedin.com)
